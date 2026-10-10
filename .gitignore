@@ -1,0 +1,21 @@
+# Secrets and local account state
+.env
+.env.*
+!.env.example
+.netlify/
+NETLIFY_CLAIM_PRIVATE.txt
+
+# Local environments and dependencies
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Private/raw training weights and local outputs
+*.pt
+artifacts/
+
+# Binary resized parity intermediates are not used by browser tests
+tests/fixtures/*.rgb

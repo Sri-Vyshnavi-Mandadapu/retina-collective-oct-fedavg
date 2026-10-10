@@ -1,0 +1,21 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'
+
+/model/model-*.onnx
+  Cache-Control: public, max-age=31536000, immutable
+
+/model/manifest.json
+  Cache-Control: no-cache
+
+/vendor/*
+  Cache-Control: public, max-age=86400
+
+/*.mjs
+  Content-Type: text/javascript; charset=utf-8
+
+/*.js
+  Cache-Control: no-cache

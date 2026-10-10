@@ -1,0 +1,20 @@
+/* Usability refinements for the public browser-inference release. */
+.skip:not(:focus) { clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; padding: 0; }
+.score-row { display: block; font-size: 12px; margin: 15px 0; }
+.score-row > .top { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+.score-track { height: 8px; }
+.transcript p,.history-item p { overflow-wrap: anywhere; }
+.drop-zone.dragging { background: #e4f5df; border-color: #2a7760; }
+.message { min-height: 1.6em; }
+#loading-detail { max-width: 300px; margin-inline: auto; }
+@media (max-width: 400px) {
+  .hero-actions { gap: 14px; }
+  .hero-actions .button { padding-inline: 12px; gap: 10px; }
+  .score-heading { gap: 10px; align-items: center; }
+}
+
+.condition-summary{margin:0 0 24px;padding:18px 20px;border:1px solid rgba(139,207,183,.22);border-radius:16px;background:rgba(139,207,183,.06)}
+.condition-summary h3{margin:0 0 8px;font-size:1rem}
+.condition-summary p{margin:0;line-height:1.65;color:var(--muted,#b8cac7)}
+.condition-summary a{display:inline-block;margin-top:10px;font-size:.82rem;color:inherit;text-underline-offset:3px}
+.condition-summary a[hidden]{display:none}

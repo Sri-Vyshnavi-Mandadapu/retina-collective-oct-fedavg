@@ -1,0 +1,27 @@
+{
+  "file": "model-51476624e742.onnx",
+  "bytes": 28234329,
+  "onnx_sha256": "51476624e742ebf93ebe2d3a21951020b2249b695fcb99ac08418d8a002e4201",
+  "source_sha256": "a67407874d3ea6ef86a9507063c67ba18fe5baefd1e309f1d6fc08fcd8023e26",
+  "classes": [
+    "CNV",
+    "DME",
+    "DRUSEN",
+    "NORMAL"
+  ],
+  "image_size": 224,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "best_round": 16,
+  "preprocess": "full_image_resize_bilinear_rgb",
+  "architecture": "DenseNet121",
+  "clients": 3
+}
